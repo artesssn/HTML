@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Uma surpresa para voce</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgba(150, 167, 182, 0.658);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: clamp(2rem, 8vw, 5rem);
+            color: rgb(17, 2, 2);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .Coraçao {
+            font-size: clamp(8rem, 30vw, 20rem);
+            animation: coraçao 1s infinite alternate linear;
+        }
+        
+        @keyframes coraçao {
+            from {
+                transform: scale(.8);
+            }
+            to {
+                transform: scale(.7);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tu es muito Linda</h1>
+    <div class="Coraçao">💖</div>
+</body>
+
+</html>
+<style>
